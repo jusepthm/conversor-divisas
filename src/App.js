@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+const App = () => {
+  const cambios=[
+    {
+      moneda: "Euro",
+      cambio:1,
+    },{
+      moneda: "Peso argentino",
+      cambio:118.6,
+    },{
+      moneda: "Peso colombiano",
+      cambio:4543.5,
+    },{
+      moneda: "Peso mexicano",
+      cambio:23.2,
+    },{
+      moneda: "Dólar",
+      cambio:1.14
+    }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <label htmlFor="u0">Etiqueta</label>
+        <input id="u0" type="number"/> 
+    </>
+  )
 }
 
 export default App;
