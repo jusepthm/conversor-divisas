@@ -28,8 +28,12 @@ const App = () => {
   const [resultado3, setResulatdo3]= useState(0);
   const [resultado4, setResulatdo4]= useState(0);
 
-  const modificar=()=>{
-
+  const modificar=(e)=>{
+    setCantidad(e.target.value);
+    setResulatdo1(e.target.value*cambios[1].cambio);
+    setResulatdo2(e.target.value*cambios[2].cambio);
+    setResulatdo3(e.target.value*cambios[3].cambio);
+    setResulatdo4(e.target.value*cambios[4].cambio);
   }
 
 
